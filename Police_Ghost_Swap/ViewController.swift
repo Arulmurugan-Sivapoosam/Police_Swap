@@ -22,7 +22,7 @@ final class ViewController: UIViewController {
     changePosition()
   }
   
-  /// Instance method generates shuffle positions.
+  /// Method shuffle positions.
   @IBAction func changePosition() {
     if let row = Int(rowField.text ?? ""),
        let column = Int(columField.text ?? "") {
