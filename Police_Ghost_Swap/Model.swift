@@ -11,7 +11,7 @@ struct Position: Equatable {
   var row, column: Int
 }
 
-/// Position generate randomly generates grids
+/// Generate random positions.
 final class PositionGenerator {
   static func generateNewPosition(boundaries: Position, secondPosition: Position?) -> Position {
     guard let nextPosition = secondPosition else { return .init(row: 0, column: 0) }
